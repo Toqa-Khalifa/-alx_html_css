@@ -1,20 +1,64 @@
+/* Layout rules from previous step */
 body {
   display: flex;
   flex-direction: column;
+  font-family: Arial, sans-serif;      /* ✅ new font */
+  background-color: #f8f8f8;           /* ✅ background color */
+  color: #333;                         /* ✅ text color */
 }
 
 main {
   display: flex;
   flex-direction: row;
   flex: auto;
+  gap: 20px;                           /* ✅ spacing between article & aside */
+  padding: 20px;                       /* ✅ inner padding */
 }
 
-main article {
+article {
   flex: 2;
   overflow-y: auto;
+  background: #ffffff;                 /* ✅ white article background */
+  padding: 15px;                       /* ✅ padding inside */
+  border-radius: 8px;                  /* ✅ rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);/* ✅ subtle shadow */
 }
 
-main aside {
+aside {
   flex: 1;
   overflow-y: auto;
+  background: #fafafa;                 /* ✅ light background */
+  padding: 15px;
+  border-left: 2px solid #ddd;         /* ✅ left border separator */
+}
+
+header {
+  background: #333;                    /* ✅ dark header */
+  color: white;
+  padding: 10px 20px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  cursor: pointer;
+}
+
+/* ✅ Bigger logo */
+.logo {
+  font-size: 2rem;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
