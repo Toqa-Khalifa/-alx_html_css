@@ -1,0 +1,312 @@
+/* ===== Reset ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #0b0b10;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* ===== Header ===== */
+.header {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  padding: 24px 64px;
+  z-index: 100;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.logo { width: 120px; }
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+  align-items: center;
+}
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  transition: color .2s ease;
+}
+.nav-list a:hover { color: #cba4ff; }
+
+/* ===== Hero Section ===== */
+.hero {
+  min-height: 100vh;
+  padding: 120px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.85)),
+              url("./imgs/background.png") center/cover no-repeat;
+}
+.hero-intro { 
+  margin-bottom: 15rem;
+  width: 100%; 
+  max-width: 1100px; 
+  padding: 0 20px; 
+}
+.hero-intro h1 {
+  
+  color: #ffffff;
+  
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+.purple{
+  color: #c271ff;
+}
+.hero-intro span {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 16px;
+  font-size: 1rem;
+  opacity: 0.98;
+}
+.btn-hehro-register{display: flex;
+  margin-top: 50px;
+  margin-left: 40%;
+  background: linear-gradient(90deg, #ff4ecd 0%, #9d5df5 100%);
+  color: #fff;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(157,93,245,0.15);
+  transition: transform .18s ease, box-shadow .18s ease, opacity .12s ease;
+}
+
+.btn-register:hover,  .btn-hehro-register:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(157,93,245,0.22);
+  opacity: 0.95;
+}
+
+/* Pros */
+.pros { margin-top: 64px; width: 100%; max-width: 1200px; padding: 0 20px; }
+.pros h2 {
+  color: #b58cff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+.pros-list {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.pro {
+  width: 160px;
+  text-align: center;
+}
+.pro img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 14px;
+}
+
+/* ===== Testimonial ===== */
+.testimonial {
+  background: #b98cff;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* ===== Tutorials ===== */
+.tutorials {
+  background-color: #ffffff;
+  padding: 80px 50px;
+  text-align: center;
+}
+.tutorials h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #263344;
+}
+.tutorial-card {
+  width: 250px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: left;
+}
+.tutorial-card img:first-child {
+  width: 100%;
+  display: block;
+}
+
+/* ===== Membership ===== */
+.membership {
+  background: #071629;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+.membership h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.member-card {
+  display: inline-block;
+  width: 220px;
+  margin: 20px;
+}
+.member-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+.member-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.member-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.btn-register {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 43%;
+  background: linear-gradient(90deg, #ff4ecd 0%, #9d5df5 100%);
+  color: #fff;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(157,93,245,0.15);
+  transition: transform .18s ease, box-shadow .18s ease, opacity .12s ease;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 80px 60px;
+  background: #fff;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+  color: #222;
+  letter-spacing: 3px;
+}
+
+.faq-columns {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.faq-col {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.faq-item {
+  margin-bottom: 40px;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+/* Footer */
+.footer {
+  background: #071629ff;
+  padding: 30px 60px;
+  border-top: 1px solid #eee;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.social-icons i {
+  font-size: 1.7rem;
+  margin-left: 15px;
+  color: #ffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+.footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .header { padding: 18px 28px; }
+  .logo { width: 96px; }
+  .hero-intro h1 { font-size: clamp(36px, 10vw, 56px); }
+  .pros-list { gap: 26px; }
+  .pro { width: 140px; }
+  .hero-intro span { margin: 0 10px; font-size: 0.95rem; }
+  .btn-register { padding: 10px 22px; }
+}
+@media (max-width: 480px) {
+  .hero { padding: 100px 12px 60px; }
+  .hero-intro h1 { font-size: 34px; }
+  .pros-list { gap: 18px; }
+  .pro img { width: 96px; height: 96px; }
+}
+@media (max-width: 768px) {
+  .tutorial-card { width: 90%; }
+}
